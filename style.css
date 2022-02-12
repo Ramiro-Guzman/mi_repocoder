@@ -1,32 +1,32 @@
 
 @media screen and (min-width:320px) and (max-width:1000px) 
 {
-    header {background-color: #940928; margin: 0px;}
+header {background-color: #940928; margin: 0px;}
     
-    header img {width: 40px;
+header img {width: 40px;
                 height: 40px;
                 margin:5px}
     
     
     
-    h1 {margin: 0px;
+h1 {margin: 0px;
         padding: 0px;
         font-family: Verdana;
         font-size: 18pt;
         color: white;}
     
-    .gridheader {padding: 15px;
+.gridheader {padding: 15px;
                  display: grid;
                  grid-template-columns: 50px auto 50px 50px 50px;
                  align-items: center;}
     
-    #btn-menu {display:none}      
-    .labelmenu {display:block;
+#btn-menu {display:none}      
+.labelmenu {display:block;
                 width: auto;
                 height: 30px;
                 padding: 5px;
                 background-color: #5B051B;}
-    .menudesplegable {position: absolute;
+.menudesplegable {position: absolute;
                       background-color: #5B051B;
                       width: auto;
                       margin-left: -100%;}
@@ -37,23 +37,24 @@ ul li {border: 1px solid black;
                 list-style: none;
                 padding: 5px 5px;
                 background-color: #BB052E;}
-   .flexboxnav {flex-direction: column;
+.flexboxnav li:hover {background: rgba(0,0,0,0.1);}
+.flexboxnav {flex-direction: column;
                 padding: 0cm;
                 width: 100%;}
-    #btn-menu:checked ~ .menudesplegable {margin: 0;}
+#btn-menu:checked ~ .menudesplegable {margin: 0;}
 
-    footer {border: 1px solid black;
+footer {border: 1px solid black;
             background-color:#940928;
             position:fixed;
             bottom: 0px;
         width: 100%;}
     
-    footer p {text-align: center; color: white;}
+footer p {text-align: center; color: white;}
     
-    a {text-decoration: none;
+a {text-decoration: none;
         color: white;}
         
-    body {background-image:url("https://images.pexels.com/photos/5531664/pexels-photo-5531664.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+body {background-image:url("https://images.pexels.com/photos/5531664/pexels-photo-5531664.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -210,7 +211,7 @@ nav { display: block;
              display: flex;
              flex-direction: row;
              justify-content: center;}
-
+             .flexboxnav li:hover {background: rgba(0,0,0,0.1);}
             
 ul li {border: 1px solid black; 
        margin: 5px 30px;
@@ -253,6 +254,7 @@ body {background-image:url("https://images.pexels.com/photos/5531664/pexels-phot
 
 .gridsectionprincipal a img {width: 95%;
                              margin-bottom: 20px;}
+.gridsectionprincipal a img:hover {box-shadow: 40px rgba(0,0,0,0.5);}
 
 h2 {margin: 0px;}
 h3 {margin: 0px;}
