@@ -33,7 +33,8 @@ h1 {margin: 0px;
 .menudesplegable {position: absolute;
                       background-color: $colorbordo;
                       width: auto;
-                      margin-left: -100%;}
+                      margin-left: -100%;
+                      transition: all 0.2s;}
 ul li {border: 1px solid black; 
                 margin: 5px 10px;
                 width: 140px;
@@ -65,9 +66,9 @@ body {background-image:url("https://images.pexels.com/photos/5531664/pexels-phot
         background-position: center center;
         background-attachment: fixed;
         margin:0px}
-    /* De la sección principal*/
+/* De la sección principal*/
     
-    .gridsectionprincipal {display: grid;
+.gridsectionprincipal {display: grid;
                   grid-template-columns:auto ;
                   grid-template-rows: auto auto auto;
                   justify-items: center;
@@ -76,27 +77,27 @@ body {background-image:url("https://images.pexels.com/photos/5531664/pexels-phot
                   text-align: center;
                   gap:10px;
                   padding-bottom: 20px;
-                  a img {width: 90%;}}
+                  a img {width: 90%; border: 1px solid white;}}
                   
-    #cuadrofraseinicio {
+#cuadrofraseinicio {
                   border: 1px solid black;
                   margin: 10px;
                   background-color:$colorrojo;}
     
-    #fraseinicio {text-align: center; 
+#fraseinicio {text-align: center; 
                   font-size: 14pt;
                 padding: 5px;}
     
     
-    h2, h3, p  {margin: 0px;}
+h2, h3, p  {margin: 0px;}
 
     
-    /* De la sección bar y restaurante*/
+/* De la sección bar y restaurante*/
     
-    .asidebar {border: 1px solid black; 
+.asidebar {border: 1px solid black; 
                margin-top: 10px;}
     
-    .sectionbar {
+.sectionbar {
                   margin-top: 10px;
                   margin-bottom:30px;
                   article {margin:10px 0px; 
@@ -104,14 +105,14 @@ body {background-image:url("https://images.pexels.com/photos/5531664/pexels-phot
     
 
     
-    .cardbar {display: grid;
+.cardbar {display: grid;
               grid-template-columns: 100%;
               grid-template-rows: repeat(7,auto);}
     
-    .element1, .element3, .element4, .element5{padding: 5px;}
-    .element2 {padding-top: 5px; padding-left: 10px;}
+.element1, .element3, .element4, .element5{padding: 5px;}
+.element2 {padding-top: 5px; padding-left: 10px;}
     
-    .galeriabar {
+.galeriabar {
                  display: grid;
                  grid-template-columns:repeat(auto-fit,150px);
                  margin:10px;
@@ -120,7 +121,7 @@ body {background-image:url("https://images.pexels.com/photos/5531664/pexels-phot
                  img {width: 150px; padding: 0px;}}
 
     
-    .finalcard {padding-left: 15px;
+.finalcard {padding-left: 15px;
                 display: grid;
                 grid-template-columns:repeat(7,auto);
                 justify-content: left;
@@ -134,13 +135,13 @@ body {background-image:url("https://images.pexels.com/photos/5531664/pexels-phot
 
 
     
-    .asidebar {background-color: $colorrosa;}
+.asidebar {background-color: $colorrosa;}
     
     form {padding: 0px 5px;}
     
     /* De la sección conocenos*/
     
-    .cardconocenos {margin: 30px;
+.cardconocenos {margin: 30px;
                     background-color: $colorrosa;
                     display: grid;
                     grid-template-areas: "description description"
@@ -150,20 +151,19 @@ body {background-image:url("https://images.pexels.com/photos/5531664/pexels-phot
                     grid-template-rows: auto auto auto;
                     justify-items: center;}
     
-    .reseñaconocenos {grid-area:description ; margin:10px}
-    .fotoconocenos {grid-area:foto;}
-    .instaconocenos {grid-area: logoinsta;}
-    .faceconocenos {grid-area: logoface;}
-   .fotoconocenos img {width: 250px; margin:10px}
-.instaconocenos img, .faceconocenos img {width: 40px;}
+.reseñaconocenos {grid-area:description ; margin:10px}
+.fotoconocenos {grid-area:foto;img {width: 250px; margin:10px}}
+.instaconocenos {grid-area: logoinsta; img {width: 40px;}}
+.faceconocenos {grid-area: logoface; img {width: 40px;}}
+
     
-    /* De la sección contacto*/
+ /* De la sección contacto*/
     
-    .contacto {background:$colorbordo; 
+.contacto {background:$colorbordo; 
                margin:20px;
                h2 {text-align: center; padding-top: 10px; @include fontcolor();}}
 
-    .gridform {justify-content: center;
+.gridform {justify-content: center;
                 display: grid;
                grid-template-columns: 80px 180px ;
                grid-template-rows: repeat(6,auto);
@@ -171,11 +171,11 @@ body {background-image:url("https://images.pexels.com/photos/5531664/pexels-phot
                 text-align: left; 
                 @include fontcolor();}}
    
-    #escribetumensaje, #boxmensaje {grid-column: 1/3;}
+#escribetumensaje, #boxmensaje {grid-column: 1/3;}
     
-    #mensaje {width: 260px; height: 400px;}
+#mensaje {width: 260px; height: 400px;}
     
-    #restablecerform, #enviarform {text-align: center;}
+#restablecerform, #enviarform {text-align: center;}
     
     
     } 
@@ -221,12 +221,9 @@ ul li {border: 1px solid black;
 
 footer {border: 1px solid black;
         background-color:$colorrojo;
-        p {text-align: center; @include fontcolor();}}
+        p {text-align: center; @include fontcolor();}
+        }
 
-footer 
-
-a {text-decoration: none;
-    @include fontcolor();}
     
 body {background-image:url("https://images.pexels.com/photos/5531664/pexels-photo-5531664.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
     background-size: cover;
@@ -240,9 +237,13 @@ body {background-image:url("https://images.pexels.com/photos/5531664/pexels-phot
               grid-template-columns:auto auto;
               grid-template-rows: auto auto;
               justify-items: center;
+              justify-content: center;
+              align-items: center;
               gap:10px;
-              a img {width: 95%;
-                margin-bottom: 20px;}}
+              a img {
+                margin-bottom: 20px;
+                width: 400px;
+                text-align: center;} }
               
 #cuadrofraseinicio {grid-column: 1 / 3;
               border: 1px solid black;
@@ -268,7 +269,7 @@ p {margin: 0px;}
 
 .sectionbar { margin-top: 10px;
               margin-bottom: 30px;article {margin:5px 0px; 
-                background-color: $colorrosa;}}  
+              background-color: $colorrosa;}}  
 
 
 .cardbar {display: grid;
@@ -317,18 +318,19 @@ form {padding: 0px 5px;}
                 justify-items: center;}
 
 .reseñaconocenos {grid-area:description ; margin:10px}
-.fotoconocenos {grid-area:foto;}
-.instaconocenos {grid-area: logoinsta;}
-.faceconocenos {grid-area: logoface;}
- .fotoconocenos img {width: 250px; margin:10px}
- .instaconocenos img, .faceconocenos img {width: 40px;}
+.fotoconocenos {grid-area:foto;
+                img {width: 250px; margin:10px}}
+.instaconocenos {grid-area: logoinsta;
+                 img{width: 40px;}}
+.faceconocenos {grid-area: logoface;
+                img{width: 40px;}}
 
 /* De la sección contacto*/
 
 .contacto {background:$colorbordo; 
            margin:20px;
            h2 {text-align: center; padding-top: 10px;@include fontcolor();}}
-.contacto 
+
 
 .gridform {justify-content: center;
             display: grid;
