@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @media screen and (min-width: 320px) and (max-width: 1000px) {
   header {
+    position: sticky;
+    top: 0px;
     background-color: #940928;
     margin: 0px;
   }
@@ -26,6 +28,8 @@
     display: none;
   }
   .labelmenu1 {
+    position: sticky;
+    top: 84px;
     display: block;
     width: auto;
     height: 30px;
@@ -33,7 +37,7 @@
     background-color: #5B051B;
   }
   .menudesplegable {
-    position: absolute;
+    position: fixed;
     background-color: #5B051B;
     width: auto;
     margin-left: -100%;
@@ -263,9 +267,15 @@
   #btn-menu1, .labelmenu1 {
     display: none;
   }
+  a {
+    text-decoration: none;
+    color: white;
+  }
   nav {
     display: block;
     background-color: #5B051B;
+    position: sticky;
+    top: 0px;
   }
   .flexboxnav1 {
     border: 1px black solid;
@@ -289,6 +299,9 @@
   }
   footer {
     border: 1px solid black;
+    width: 100%;
+    position: fixed;
+    bottom: 0pt;
     background-color: #940928;
   }
   footer p {
