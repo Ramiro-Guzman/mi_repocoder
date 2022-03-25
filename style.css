@@ -89,6 +89,7 @@
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
+    width: 100%;
   }
   /* De la sección principal*/
   .gridsectionprincipal {
