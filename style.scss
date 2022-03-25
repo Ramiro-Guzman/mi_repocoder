@@ -71,13 +71,10 @@ footer {border: 1px solid black;
 a {text-decoration: none;
     @include fontcolor();}
         
-body {background: url("imagenes/fondo celu.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-width: 100%;}
+body {background: url("imagenes/fondo celu.png");
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: cover;}
 /* De la sección principal*/
     
 .gridsectionprincipal {
