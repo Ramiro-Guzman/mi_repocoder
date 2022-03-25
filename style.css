@@ -83,12 +83,11 @@
     color: white;
   }
   body {
-    background-image: url("https://images.pexels.com/photos/5531664/pexels-photo-5531664.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background: url("imagenes/fondo celu.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    margin: 0px;
   }
   /* De la sección principal*/
   .gridsectionprincipal {
